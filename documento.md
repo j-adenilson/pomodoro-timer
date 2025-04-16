@@ -29,3 +29,10 @@ Aplicação web feita com HTML, CSS e JavaScript para controle de tempo no méto
 - Estilo viual limpo e focado na usabilidade.
 - Botões com destaque em vermelho, indicando ação.
 - Fonte simples e moderna para legibilidade.
+
+## Deply
+
+O projeto foi publicado com GitHub Pages.
+
+Link:
+https://j-adenilson.github.io/pomodoro-timer/
