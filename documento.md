@@ -22,3 +22,10 @@ Aplicação web feita com HTML, CSS e JavaScript para controle de tempo no méto
 - O botão "Pause" interrompe temporariamente a contagem.
 - O botão "Reiniciar" volta o tempo para 25:00.
 - Ao chegar em 0, exibe um alerta: "tempo encerrado! Faça uma pausa."
+
+## Estilo
+
+- Layout centralizado e responsivo.
+- Estilo viual limpo e focado na usabilidade.
+- Botões com destaque em vermelho, indicando ação.
+- Fonte simples e moderna para legibilidade.
