@@ -48,3 +48,8 @@ https://j-adenilson.github.io/pomodoro-timer/
 ## Exemplo de uso
 Ao finalizar um ciclo completo, o número de ciclos exibido é incrementado automaticamente. O usuário pode resetar esse número clicando em "Zerar ciclos."
 
+## Adições:
+- Implementação de transição entre foco e pausa no ciclo Pomodoro.
+- Lógica para alternar entre o tempo de trabalho (25 minutos) e o tempo de pausa (5 minutos).
+- Correção no comportamento dos botões "Start", "Pause" e "Reset" para desabilitar e habilitar corretamente conforme o estado do timer.
+- Adição de contagem de ciclos completados (Pomodoro) e exibição na interface.
