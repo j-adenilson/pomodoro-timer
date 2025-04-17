@@ -36,3 +36,15 @@ O projeto foi publicado com GitHub Pages.
 
 Link:
 https://j-adenilson.github.io/pomodoro-timer/
+
+## Alterações
+
+- Elemento HTML para exibir o número de ciclos concluídos.
+- Variável `cycleCount` para armazenar os ciclos.
+- Função `cicloConcluido()` chamada ao fim de cada ciclo para atualizar o vaalor.
+- Botão "Zerar ciclos" para reiniciar o contador.
+- Estilo básico para centralizar e deixar viual agradável.
+
+## Exemplo de uso
+Ao finalizar um ciclo completo, o número de ciclos exibido é incrementado automaticamente. O usuário pode resetar esse número clicando em "Zerar ciclos."
+

@@ -50,3 +50,21 @@ btnPause.addEventListener("click", pausarTimer);
 btnReset.addEventListener("click", reiniciaTimer);
 
 atualizarDisplay(); // atualiza ao carregar
+
+//Ciclos Pomodoros
+//Variável que conta quantos ciclos Pomodoros foram concluidos
+let cycleCount = 0;
+
+//Função que deve ser chamada sempre que um ciclo(foco + pausa) for concluído
+function cicloConcluido(){
+    cycleCount++;
+    document.getElementById("cycle-count").textContent = cycleCount; //Atualiza o número na interface
+}
+
+//Zera o contador de ciclos quando o usuário clica no botão
+document.getElementById("reset-cycles").addEventListener("click", ()=> {
+    cycleCount = 0; //Reinicia o valor da variável
+    document.getElementById("cycle-count").textContent = cycleCount; // Atualiza na tela
+});
+
+
