@@ -19,22 +19,31 @@ function atualizarDisplay(){
 function iniciarTimer(){
     if (timer || tempoAtual <= 0) return;
 
+    btnStart.disabled = true;
+    btnPause.disabled = false;
+    btnReset.disabled = false;
+
     timer = setInterval(() => {
         if (tempoAtual > 0) {
             tempoAtual--;
             atualizarDisplay();
-        }else{
+        } else {
             clearInterval(timer);
             timer = null;
+            cicloConcluido();
+            btnStart.disabled = false; // reabilita o start para o próximo ciclo
+            btnPause.disabled = true; // desabilita o botão de pausa
             alert("Tempo encerrado! Faça uma pausa.");
         }
     }, 1000);
 }
 
 function pausarTimer(){
-    if (timer){
+    if (timer) {
         clearInterval(timer);
         timer = null;
+        btnStart.disabled = false; // habilita o botão de start novamente
+        btnPause.disabled = true;  // desabilita o botão de pause
     }
 }
 
@@ -43,7 +52,11 @@ function reiniciaTimer(){
     timer = null;
     tempoAtual = tempo;
     atualizarDisplay();
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnReset.disabled = true;
 }
+
 
 btnStart.addEventListener("click", iniciarTimer);
 btnPause.addEventListener("click", pausarTimer);
@@ -59,7 +72,21 @@ let cycleCount = 0;
 function cicloConcluido(){
     cycleCount++;
     document.getElementById("cycle-count").textContent = cycleCount; //Atualiza o número na interface
-}
+
+        
+        // Alterna entre foco e pausa
+        if (cycleCount % 2 === 0) {
+            tempo = 5 * 60; // 5 minutos de pausa
+            tempoAtual = tempo;
+            alert("Hora de descansar!");
+        } else {
+            tempo = 25 * 60; // 25 minutos de foco
+            tempoAtual = tempo;
+            alert("Hora de focar!");
+        }
+    
+        atualizarDisplay();
+    }
 
 //Zera o contador de ciclos quando o usuário clica no botão
 document.getElementById("reset-cycles").addEventListener("click", ()=> {
