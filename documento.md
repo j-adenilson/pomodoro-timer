@@ -48,8 +48,45 @@ https://j-adenilson.github.io/pomodoro-timer/
 ## Exemplo de uso
 Ao finalizar um ciclo completo, o número de ciclos exibido é incrementado automaticamente. O usuário pode resetar esse número clicando em "Zerar ciclos."
 
-## Adições:
+## Adições
+
 - Implementação de transição entre foco e pausa no ciclo Pomodoro.
 - Lógica para alternar entre o tempo de trabalho (25 minutos) e o tempo de pausa (5 minutos).
 - Correção no comportamento dos botões "Start", "Pause" e "Reset" para desabilitar e habilitar corretamente conforme o estado do timer.
 - Adição de contagem de ciclos completados (Pomodoro) e exibição na interface.
+
+## Funcionalidade
+
+- Contador regressivo de **25 minutos** (tempo de foco).
+- Botões de **iniciar, pausar e reiniciar**.
+- Alternância automática entre **tempo de foco (25min)** e **tempo de descanso (5min)**.
+- Campo para inserir a **tarefa atual**.
+- Exibição da tarefa enquanto o ciclo está em andamento.
+- Contador de **ciclos concluídos**.
+- Botão para **zerar ciclos**.
+- Projeto com **interface simples, limpa e responsiva**.
+- Lógica automatizada para manter o ritmo de produtividade e descanso.
+
+##  Como funciona
+
+- O usuário insere a tarefa no campo de texto.
+- Ao clicar em **"Iniciar"**, o cronômetro começa a contagem regressiva.
+- Ao final dos 25 minutos, inicia-se automaticamente o **tempo de descanso (5 minutos)**.
+- A cada ciclo completo de foco, o contador de **ciclos é incrementado**.
+- O botão de **reinício** permite voltar ao tempo inicial.
+- O botão de **pausa** interrompe a contagem.
+
+##  Estrutura dos Arquivos
+
+- `index.html`: Estrutura principal da aplicação.
+- `style.css`: Estilo visual da interface.
+- `script.js`: Lógica de funcionamento do timer.
+- `README.md`: Descrição do projeto.
+
+##  Exemplo de uso
+
+1. Digite a tarefa no campo "Digite sua tarefa".
+2. Clique em **Iniciar**.
+3. Concentre-se na tarefa até o timer chegar a zero.
+4. Após a notificação, descanse por 5 minutos automaticamente.
+5. Ao final do descanso, o ciclo será contabilizado e o foco recomeça.

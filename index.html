@@ -9,6 +9,12 @@
 <body>
     <h1>Pomodoro Timer</h1>
 
+    <div id="task-input-container">
+        <input type="text" id="task-input" placeholder="Digite sua tarefa (ex: Estudando)">
+    </div>
+
+    <div id="current-task"></div>
+
     <div id="timer">25:00</div>
 
     <div class="buttons">
@@ -18,10 +24,9 @@
     </div>
 
     <div id="cycle-container">
-        <p>Ciclos concluidos: <span id="cycle-count">0</span></p>
-        <button id="reset-cycles">Zerar cíclos</button>
+        <p>Ciclos concluídos: <span id="cycle-count">0</span></p>
+        <button id="reset-cycles">Zerar ciclos</button>
     </div>
-
 
     <script src="script.js"></script>
 </body>
